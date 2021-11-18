@@ -1,7 +1,6 @@
 ///caculating process
 function compute()
 {
-	console.log("hola");
     
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
@@ -26,3 +25,10 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
         
+function reset() {
+    document.getElementById("principal").value ='';    
+    document.getElementById("rate_val").innerHTML = "10.25";    
+    document.getElementById("years").value = 1;
+    document.getElementById("rate").value = 10.25;
+    document.getElementById("result").innerHTML = '';
+}
